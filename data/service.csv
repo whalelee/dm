@@ -1,0 +1,21 @@
+ServiceNumber,Label,StartTime,EndTime,Frequency
+7,Bedok Temp Int - Clementi Int,05:30,23:30,10
+14,Bedok Temp Int - Clementi Int,05:30,23:45,15
+16,Bedok Temp Int - Bt Merah Int,05:30,23:45,20
+36,Changi Airport Ptb2 - Changi Airport Ptb2,06:10,22:53,20
+77,Bt Batok Int - Marina Ctr Ter,06:00,23:00,15
+106,Bt Batok Int - Shenton Way Ter,05:32,23:32,10
+111,Ghim Moh Ter - Ghim Moh Ter,06:00,23:59,20
+124,St. Michael's Ter - St. Michael's Ter,05:30,23:24,15
+128,Ang Mo Kio Depot - Shenton Way Ter,07:12,23:32,20
+162,Yio Chu Kang Ter - Shenton Way Ter,05:30,18:00,15
+167,Sembawwang Int - Bt Merah Int,05:30,23:30,20
+171,Yishun Int - Marina Ctr Ter,05:30,23:30,15
+174,Boon Lay Int - New Bridge Rd Ter,05:30,23:30,10
+175,Clementi Int - Lor 1 Geylang,06:00,23:30,20
+190,Choa Chu Kang Int - New Bridge Rd Ter,05:50,23:30,20
+502,Soon Lee Bus Park - Soon Lee Bus Park,05:55,22:00,15
+518,Pasir Ris Int - Pasir Ris Int,06:00,22:00,15
+587,Opp Blk 624B - Opp Mas Bldg,07:40,23:30,10
+590,Opp Blk 666 - Opp Mas Bldg,07:40,23:30,20
+598,Maysprings Condo - Opp Mas Bldg,07:45,22:00,15

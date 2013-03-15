@@ -1,0 +1,36 @@
+ServiceNumber,SerialNumber,RemarkNumber,Text
+7,24,1,Tyre Puncture
+7,155,1,Heavy Rain
+7,155,2,Accident on PIE
+14,30,1,Heavy Rain
+16,39,1,Traffic Jam
+77,11,1,Heavy Rain
+77,67,1,Road Works
+77,67,2,Delay due to plant pruning
+106,170,1,Tree Collapsed
+111,105,1,Accident on the Road
+111,105,2,slow moving traffic
+111,124,1,Traffic Jam
+124,74,1,Tyre Puncture
+124,88,1,Heavy Rain
+128,37,1,Accident on the Road
+128,90,1,Passenger Fainted on the Bus
+162,48,1,Slippery Road
+162,160,1,Slippery Road
+167,19,1,Slippery Road
+167,104,1,Slippery Road
+171,123,1,Accident on the Road
+174,6,1,Traffic Jam
+174,108,1,Traffic Jam
+174,108,2,Heavy Rain
+175,162,1,Slippery Road
+175,115,1,Traffic Jam
+518,69,1,Traffic Jam
+518,46,1,Traffic Jam
+518,151,1,Slippery Road
+587,122,1,Tyre Puncture
+590,102,1,Heavy Rain
+590,102,2,Traffic Jam at exit 4
+590,102,3,Delay due to plant pruning
+598,32,1,Slippery Road
+598,77,1,Heavy Rain

@@ -95,9 +95,9 @@ CREATE TABLE `trip` (
   PRIMARY KEY (`Service_No`,`Serial_No`),
   KEY `trip_fk2` (`Plate_No`),
   KEY `trip_fk3` (`Staff_ID`),
+  CONSTRAINT `trip_fk5` FOREIGN KEY (`Staff_ID`) REFERENCES `driver` (`Staff_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `trip_fk1` FOREIGN KEY (`Service_No`) REFERENCES `service` (`Service_No`),
-  CONSTRAINT `trip_fk2` FOREIGN KEY (`Plate_No`) REFERENCES `bus` (`Plate_No`),
-  CONSTRAINT `trip_fk4` FOREIGN KEY (`Staff_ID`) REFERENCES `staff` (`Staff_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `trip_fk2` FOREIGN KEY (`Plate_No`) REFERENCES `bus` (`Plate_No`)
 );
 
 CREATE TABLE `remark` (

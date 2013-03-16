@@ -2,8 +2,8 @@ CREATE DATABASE `dm_phase2`;
 USE `dm_phase2`;
 
 CREATE TABLE `bus` (
-  `Plate_No` varchar(9) NOT NULL,
-  `Model` varchar(8) NOT NULL,
+  `Plate_No` varchar(10) NOT NULL,
+  `Model` varchar(20) NOT NULL,
   `Capacity` int(11) NOT NULL,
   `Date_Acquired` date NOT NULL,
   PRIMARY KEY (`Plate_No`)
@@ -22,7 +22,7 @@ CREATE TABLE `card` (
 
 CREATE TABLE `service` (
   `Service_No` int(11) NOT NULL,
-  `Label` varchar(50) NOT NULL,
+  `Label` varchar(100) NOT NULL,
   `Start_Time` time NOT NULL,
   `End_Time` time NOT NULL,
   `Frequency` int(11) NOT NULL,
@@ -42,8 +42,8 @@ CREATE TABLE `staff` (
 
 CREATE TABLE `stop` (
   `Stop_No` int(11) NOT NULL,
-  `Location_Desp` varchar(50) NOT NULL,
-  `Address` varchar(50) NOT NULL,
+  `Location_Desp` varchar(100) NOT NULL,
+  `Address` varchar(100) NOT NULL,
   PRIMARY KEY (`Stop_No`)
 );
 
@@ -51,7 +51,7 @@ CREATE TABLE `stop` (
 CREATE TABLE `admin` (
   `Staff_ID` int(11) NOT NULL,
   `Cubicle_No` int(11) NOT NULL,
-  `Job_Title` varchar(25) NOT NULL,
+  `Job_Title` varchar(255) NOT NULL,
   PRIMARY KEY (`Staff_ID`),
   CONSTRAINT `admin_fk2` FOREIGN KEY (`Staff_ID`) REFERENCES `staff` (`Staff_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
@@ -117,7 +117,7 @@ CREATE TABLE `transaction` (
   `End_Stop_No` int(11) NOT NULL,
   `Tap_In_Time` time NOT NULL,
   `Tap_Out_Time` time NOT NULL,
-  PRIMARY KEY (`Service_No`,`Card_ID`,`Serial_No`,`Start_Stop_No`),
+  PRIMARY KEY (`Service_No`,`Card_ID`,`Serial_No`,`Start_Stop_No`,`Tap_In_Time`),
   KEY `transcation_fk1` (`Start_Stop_No`),
   KEY `transaction_fk4` (`End_Stop_No`),
   KEY `transaction_fk2` (`Service_No`,`Serial_No`),

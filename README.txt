@@ -120,3 +120,16 @@ Record inserted
 
 
 
+USEFUL INFORMATION
+-====================-
+1. Total unique buses 41
+2. buses that have rides = 40
+3. among buses that are driven by JulDecBabies & capacity 72 = 18
+4. among buses that are driven by JulDecBabies & capacity 46 = 22
+
+how to set variables in mysql
+=============================
+set @variable_name = 123;
+http://dev.mysql.com/doc/refman/5.0/en/set-statement.html
+
+

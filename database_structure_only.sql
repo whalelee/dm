@@ -22,7 +22,7 @@ CREATE TABLE `card` (
 
 CREATE TABLE `service` (
   `Service_No` int(11) NOT NULL,
-  `Label` text NOT NULL,
+  `Label` varchar(50) NOT NULL,
   `Start_Time` time NOT NULL,
   `End_Time` time NOT NULL,
   `Frequency` int(11) NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE `service` (
 CREATE TABLE `staff` (
   `Staff_ID` int(11) NOT NULL,
   `NRIC` char(9) NOT NULL,
-  `Staff_Name` text NOT NULL,
+  `Staff_Name` varchar(50) NOT NULL,
   `DOB` date NOT NULL,
   `Staff_Type` char(1) NOT NULL,
   PRIMARY KEY (`Staff_ID`)
@@ -42,8 +42,8 @@ CREATE TABLE `staff` (
 
 CREATE TABLE `stop` (
   `Stop_No` int(11) NOT NULL,
-  `Location_Desp` text NOT NULL,
-  `Address` text NOT NULL,
+  `Location_Desp` varchar(50) NOT NULL,
+  `Address` varchar(50) NOT NULL,
   PRIMARY KEY (`Stop_No`)
 );
 
@@ -51,7 +51,7 @@ CREATE TABLE `stop` (
 CREATE TABLE `admin` (
   `Staff_ID` int(11) NOT NULL,
   `Cubicle_No` int(11) NOT NULL,
-  `Job_Title` text NOT NULL,
+  `Job_Title` varchar(25) NOT NULL,
   PRIMARY KEY (`Staff_ID`),
   CONSTRAINT `admin_fk2` FOREIGN KEY (`Staff_ID`) REFERENCES `staff` (`Staff_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION
 );

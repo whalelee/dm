@@ -104,7 +104,7 @@ CREATE TABLE `remark` (
   `Service_No` int(11) NOT NULL,
   `Serial_No` int(11) NOT NULL,
   `Remark_No` int(11) NOT NULL,
-  `Description` text NOT NULL,
+  `Description` varchar(225) NOT NULL,
   PRIMARY KEY (`Service_No`,`Serial_No`,`Remark_No`),
   CONSTRAINT `remark_fk1` FOREIGN KEY (`Service_No`, `Serial_No`) REFERENCES `trip` (`Service_No`, `Serial_No`) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
